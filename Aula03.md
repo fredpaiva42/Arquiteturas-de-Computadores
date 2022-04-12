@@ -301,7 +301,6 @@ $$
 $$
 TE = 100, TE_F = \frac{100}{3}\\
 \frac{100}{3} = 100 - x + \frac{x}{5} \to x = 83,33
-
 $$
   - Quanto tempo de execução as instruções de ponto flutuante teriam que levar em conta neste programa para gerar a aceleração desejada nesse benchmark?
     - **83,33 segundos deveriam ser somente para executar instruções de ponto flutuante para conseguirmos o tempo de execução 3x mais rápido.**
