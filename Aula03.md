@@ -57,9 +57,11 @@ $$
 
 ## Definição de Desempenho
 - Para um programa que roda na máquina X:
-$$
+<!-- $$
   Desempenho_x = \frac{1}{tempo\space de\space execução_x}
-$$
+$$ --> 
+
+<div align="center"><img style="background: white;" src="svg/qnjtZgoBfx.svg"></div>
 
 - X é n vezes mais rápido que Y:
 $$
