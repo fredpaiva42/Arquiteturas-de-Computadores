@@ -57,11 +57,9 @@ $$
 
 ## Definição de Desempenho
 - Para um programa que roda na máquina X:
-<!-- $$
+$$
   Desempenho_x = \frac{1}{tempo\space de\space execução_x}
-$$ --> 
-
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20Desempenho_x%20%3D%20%5Cfrac%7B1%7D%7Btempo%5Cspace%20de%5Cspace%20execu%C3%A7%C3%A3o_x%7D"></div>
+$$
 
 - X é n vezes mais rápido que Y:
 $$
@@ -300,12 +298,10 @@ $$
     - **1,6667 vezes mais rápido que a máquina antiga**
 
 - Estamos procurando um benchmark para mostrar a nova unidade de ponto flutuante descrita acima e queremos um benchmark que mostre um speedup de 3. Estamos considerando que roda em 100 segundos com o hardware antigo.
-<!-- $$
+$$
 TE = 100, TE_F = \frac{100}{3}\\
 \frac{100}{3} = 100 - x + \frac{x}{5} \to x = 83,33
-$$ --> 
-
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=TE%20%3D%20100%2C%20TE_F%20%3D%20%5Cfrac%7B100%7D%7B3%7D%5C%5C%0A%5Cfrac%7B100%7D%7B3%7D%20%3D%20100%20-%20x%20%2B%20%5Cfrac%7Bx%7D%7B5%7D%20%5Cto%20x%20%3D%2083%2C33"></div>
+$$
   - Quanto tempo de execução as instruções de ponto flutuante teriam que levar em conta neste programa para gerar a aceleração desejada nesse benchmark?
     - **83,33 segundos deveriam ser somente para executar instruções de ponto flutuante para conseguirmos o tempo de execução 3x mais rápido.**
 
