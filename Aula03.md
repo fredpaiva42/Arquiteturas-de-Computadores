@@ -1,4 +1,4 @@
-# Entendendo Desempenho
+# Entendendo Desempenho!
 
 ## Desempenho
 - Desempenho é a chave para entender a motivação implicita para o hardware e sua organização.
