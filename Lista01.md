@@ -64,3 +64,36 @@ A Lei de Moore refere-se à percepção de Gordon Moore de que o número de tran
 **Interpretador**: O interpretador faz a execução e analise do código linha a linha em tempo de execução.
 
 **Máquina Virtual**:Na ciência da computação, máquina virtual consiste em um software de ambiente computacional, que executa programas como um computador real, também chamado de processo de virtualização. Uma máquina virtual pode ser definida como “uma duplicata eficiente e isolada de uma máquina real”.
+
+### 10. É concebível um compilador gerar saída para o nível de microarquitetura em vez de para o nível ISA? Discuta prós e contras dessa proposta.
+É possível, mas é problemático, o primeiro problema é a quantidade de código que será produzido, pois como a ISA é um conjunto de micro instruções e tem uma complexidade menor, ela vai precisar de mais linha de códigos para fazer o mesmo serviço que um código em linguagem de maior nível. Outro problema é que o compilador vai ter que lidar com uma linguagem mais primitiva, o que vai acabar tornado ela mesma mais complexa. Já o lado positivo é que o programa final pode ser muito mais rápido já que vai pular a etapa de interpretação.
+
+### 11. Você pode imaginar qualquer computador multiníveis no qual o nível de dispositivo e os níveis lógicos digitais não estivessem nos níveis mais baixos? Explique
+
+?
+
+### 12. Considere um computador multinível no qual todos os níveis são diferentes. Cada nível tem instruções que são m vezes mais poderosas que as do nível abaixo dele; isto é, uma intrução no nível r pode fazer o trabalho de m instruções de nível r-1. Se um programa de nível 1 requer k segundos para executar, quanto tempo levariam programas equivalentes nos níveis 2, 3 e 4 admitindo que são necessárias n intruções de nível r para interpretar uma única instrução de nível r + 1?
+Cada nível de interpretação retarda à máquina em fator de:
+$$
+\frac{n}{m}
+$$
+
+Assim os tempos para os níveis de execução 2, 3 e 4 são respectivamente:
+$$
+2: \frac{k * n}{m};\space3:\frac{k * n^2}{m};\space 4: \frac{k * n^3}{m}
+$$
+
+### 13. Algumas instruções no nível do sistema operacional da máquina são idênticas a instruções em linguagem ISA. Elas são executadas diretamente pelo microprograma ou pelo hardware, e não pelo sistema operacional. À luz de sua resposta ao problema anterior, por que você acha que isso acontece?
+?
+
+### 14. Considere um computador com interpretadores idênticos aos níveis 1, 2 e 3. Um interpretador precisa de n instruções para buscas, examinr e executar um instrução. Uma instrução de nível 1 demora k nanossegundos para executar. Quanto tempo demora para executar uma instrução nos níves 2, 3 e 4?
+
+### 15. Em que sentido hardware e software são equivalentes? E não equivalentes?
+
+Hardware e software são logicamente equivalentes, isto é, qualquer operação efetuada pelo software pode também ser implementada pelo hardware e qualquer instrução executada pelo hardware pode também ser simulada pelo software.
+
+Não são equivalentes pois Hardware está em forma física e o software em forma digital ou seja, impossível de se tocar ou modificar ou até mesmo fazer overclocking.
+
+Princípio de Equivalência de Hardware e Software: Qualquer coisa que 
+possa ser feita com software pode ser feita com hardware, e qualquer coisa 
+que possa ser feita com hardware também pode ser feita com software.
