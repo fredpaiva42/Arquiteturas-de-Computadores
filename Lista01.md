@@ -18,14 +18,14 @@ A **estrutura** de um computador é o modo como seus componentes se relacionam e
 ### 3. Quais são as quatro funções principais de um computador?
 - Processamento de dados
 - Armazenamento de Dados
-- Movimentação
+- Movimentação de Dados
 - Controle
 
 ### 4.Liste e defina resumidamente os principais componentes estruturais de um computador.
 
 - **CPU**: controla a operação do computador e a execução das funções de processamento de dados.
 - **Memória Principal**: Armazena informações para acesso imediato da CPU.
-- **I/O**: Proporciona uma interface entre o computador e o usuário.
+- **I/O**: Proporciona uma interface entre o computador e o usuário/Move os dados entre o computador e seu ambiente externo.
 - **Interconexão de Sistema (Barramentos)**: Mecanismo que é usado para fazer a conexão entre os componentes estruturais do computador.
 
 ### 5. Liste e defina resumidamente os principais componentes estruturais de um processador.
@@ -55,7 +55,7 @@ A **estrutura** de um computador é o modo como seus componentes se relacionam e
 - Armazenamento de resultados: o resultado é escrito na memória ou no dispositivo de I/O.
 
 ### 8. Explique a Lei de Moore.
-A Lei de Moore refere-se à percepção de Gordon Moore de que o número de transistores em um microchip dobra a cada dois anos, embora o custo dos computadores seja reduzido pela metade. A Lei de Moore diz que podemos esperar que a velocidade e a capacidade de nossos computadores aumentem a cada dois anos, e pagaremos menos por eles.
+A Lei de Moore refere-se à percepção de Gordon Moore de que o número de transistores em um microchip dobra a cada dois anos, embora o custo dos computadores seja reduzido pela metade. A Lei de Moore diz que podemos esperar que a velocidade e a capacidade de nossos computadores aumentem a cada dois anos, e pagaremos menos por eles. A lei de Moore diz que a quantidade de transistores que podem ser inseridos numa area de chip dobra entre 18 e 24 meses
 
 ### 9. Explique cada um dos termos seguintes com suas próprias palavras: Tradutor, Interpretador e Máquina Virtual
 
@@ -70,7 +70,10 @@ A Lei de Moore refere-se à percepção de Gordon Moore de que o número de tran
 
 ### 11. Você pode imaginar qualquer computador multiníveis no qual o nível de dispositivo e os níveis lógicos digitais não estivessem nos níveis mais baixos? Explique
 
-?
+Durante o projeto detalhado de um novo computador, o dispositivo e os n´ıveis
+de logica digital da nova m ´ aquina podem muito bem ser simulados em uma m ´ aquina ´
+antiga, o que os coloca em torno do n´ıvel 5 ou 6.
+
 
 ### 12. Considere um computador multinível no qual todos os níveis são diferentes. Cada nível tem instruções que são m vezes mais poderosas que as do nível abaixo dele; isto é, uma intrução no nível r pode fazer o trabalho de m instruções de nível r-1. Se um programa de nível 1 requer k segundos para executar, quanto tempo levariam programas equivalentes nos níveis 2, 3 e 4 admitindo que são necessárias n intruções de nível r para interpretar uma única instrução de nível r + 1?
 Cada nível de interpretação retarda à máquina em fator de:
@@ -84,7 +87,7 @@ $$
 $$
 
 ### 13. Algumas instruções no nível do sistema operacional da máquina são idênticas a instruções em linguagem ISA. Elas são executadas diretamente pelo microprograma ou pelo hardware, e não pelo sistema operacional. À luz de sua resposta ao problema anterior, por que você acha que isso acontece?
-?
+Cada nível adicional de interpretação custa algo no tempo. Se as mesmas instruções de um nível são oferecidas pelos níveis abaixo, entãoo essas instruções devem ser evitadas já que levariam um tempo maior para serem executadas em comparação com as mesmas instruções nos níveis abaixos. Se um nível de interpreção não é necessário, então deve ser evitado
 
 ### 14. Considere um computador com interpretadores idênticos aos níveis 1, 2 e 3. Um interpretador precisa de n instruções para buscas, examinr e executar um instrução. Uma instrução de nível 1 demora k nanossegundos para executar. Quanto tempo demora para executar uma instrução nos níves 2, 3 e 4?
 
